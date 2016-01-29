@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D31C7131C5A4AF1004FF383 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D31C7121C5A4AF1004FF383 /* FactModel.swift */; };
+		2D31C7151C5A6100004FF383 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D31C7141C5A6100004FF383 /* ColorModel.swift */; };
 		2DC6AFDB1C59184E00D481C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6AFDA1C59184E00D481C8 /* AppDelegate.swift */; };
 		2DC6AFDD1C59184E00D481C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6AFDC1C59184E00D481C8 /* ViewController.swift */; };
 		2DC6AFE01C59184E00D481C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC6AFDE1C59184E00D481C8 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D31C7121C5A4AF1004FF383 /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		2D31C7141C5A6100004FF383 /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		2DC6AFD71C59184E00D481C8 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC6AFDA1C59184E00D481C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DC6AFDC1C59184E00D481C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				2DC6AFE11C59184E00D481C8 /* Assets.xcassets */,
 				2DC6AFE31C59184E00D481C8 /* LaunchScreen.storyboard */,
 				2DC6AFE61C59184E00D481C8 /* Info.plist */,
+				2D31C7121C5A4AF1004FF383 /* FactModel.swift */,
+				2D31C7141C5A6100004FF383 /* ColorModel.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					2DC6AFD61C59184E00D481C8 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7PC258Y9Q2;
 					};
 				};
 			};
@@ -135,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D31C7131C5A4AF1004FF383 /* FactModel.swift in Sources */,
 				2DC6AFDD1C59184E00D481C8 /* ViewController.swift in Sources */,
 				2DC6AFDB1C59184E00D481C8 /* AppDelegate.swift in Sources */,
+				2D31C7151C5A6100004FF383 /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +256,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.flowmo.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.flowmo.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +299,7 @@
 				2DC6AFEB1C59184E00D481C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
